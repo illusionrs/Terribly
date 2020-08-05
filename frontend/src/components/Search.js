@@ -27,8 +27,9 @@ class Search extends React.Component {
 
     var b = [];
     var self = this;
+    // http://localhost:5000/data
     axios
-      .get("http://localhost:5000/data")
+      .get("/data")
       .then((response) => {
         // handle success
         var a = JSON.stringify(response);
